@@ -1,0 +1,13 @@
+a = int(input())
+phoneBook = dict(input().split() for _ in range(a))
+
+while (True):
+    try:
+        name = input()
+        if name in phoneBook:
+            print(f"{name}={phoneBook[name]}")
+        else:
+            print("Not found")
+    except:
+        break
+    
