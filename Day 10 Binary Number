@@ -1,0 +1,18 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+def decimalToBinary(n):
+    binary_num = bin(n).split("b")
+    binary_num = binary_num[1]
+    print( len(max(binary_num.replace('0', ' ').split(), key=len)))
+
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+    a = decimalToBinary(n)
+    
